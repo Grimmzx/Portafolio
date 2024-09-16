@@ -1,0 +1,21 @@
+/* src/assets/styles/Footer.css */
+
+/* Estilo general del pie de página */
+footer {
+  padding: 20px 0;
+  text-align: center;
+  color: white; /* Mantén el color de texto para que contraste con el fondo global */
+}
+
+/* Estilo del texto */
+footer p {
+  margin: 0;
+  font-size: 16px;
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+/* Animación de entrada */
+@keyframes fadeIn {
+  0% { opacity: 0; transform: translateY(20px); }
+  100% { opacity: 1; transform: translateY(0); }
+}

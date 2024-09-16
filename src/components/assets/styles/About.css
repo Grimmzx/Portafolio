@@ -1,0 +1,44 @@
+/* src/assets/styles/About.css */
+
+/* Estilo general de la sección */
+#about {
+  padding: 60px 20px;
+  text-align: center;
+  color: white; /* Mantén el color de texto para que contraste con el fondo global */
+}
+
+/* Título de la sección */
+#about h2 {
+  font-size: 36px;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+  color: #f1c40f;
+  position: relative;
+  display: inline-block;
+  padding-bottom: 10px;
+}
+
+/* Efecto de subrayado */
+#about h2::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  width: 0;
+  height: 4px;
+  background-color: #f1c40f;
+  transition: all 0.4s ease;
+  transform: translateX(-50%);
+}
+
+#about h2:hover::after {
+  width: 100%;
+}
+
+/* Estilo del párrafo */
+#about p {
+  font-size: 18px;
+  line-height: 1.8;
+  margin-top: 20px;
+  animation: fadeIn 1.5s ease-in-out;
+}

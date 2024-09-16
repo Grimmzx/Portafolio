@@ -1,0 +1,47 @@
+/* src/assets/styles/Hero.css */
+
+.hero-section {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+/* Estilo para el texto principal */
+.hero-section h1 {
+  font-size: 48px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+  animation: fadeIn 2s ease-in-out;
+}
+
+/* Estilo para el párrafo */
+.hero-section p {
+  font-size: 24px;
+  font-weight: 300;
+  margin-bottom: 30px;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+}
+
+/* Botón con efecto hover */
+.hero-section .btn {
+  font-size: 18px;
+  padding: 10px 20px;
+  background-color: #f1c40f;
+  border: none;
+  text-transform: uppercase;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.hero-section .btn:hover {
+  background-color: #e67e22;
+  transform: scale(1.1);
+}
+
+/* Animación para el texto */
+@keyframes fadeIn {
+  0% { opacity: 0; transform: translateY(-20px); }
+  100% { opacity: 1; transform: translateY(0); }
+}

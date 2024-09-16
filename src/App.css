@@ -1,38 +1,38 @@
-.App {
+/* src/assets/styles/App.css */
+
+/* Fondo degradado global */
+body {
+  background: linear-gradient(135deg, #3498db, #8e44ad);
+  margin: 0;
+  font-family: Arial, sans-serif;
+  color: #fff;
+}
+
+/* Estilo general de las secciones */
+section {
+  padding: 60px 20px;
+}
+
+/* Estilos de títulos comunes */
+h2 {
+  font-size: 36px;
   text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+  color: #f1c40f;
+  position: relative;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Efecto subrayado animado para los títulos */
+h2::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  width: 50px;
+  height: 4px;
+  background-color: #f1c40f;
+  transform: translateX(-50%);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+/* Añade más estilos globales si es necesario */
