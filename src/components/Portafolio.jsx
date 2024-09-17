@@ -45,7 +45,7 @@ const Portfolio = () => {
               <div className="card-body">
                 <h5 className="card-title">{project.title}</h5>
                 <p className="card-text">{project.description}</p>
-                <button onClick={() => openModal(project)} className="btn btn-custom">Ver más</button>
+                <button onClick={() => openModal(project)} className="btn btn-primary">Ver más</button>
               </div>
             </div>
           </div>

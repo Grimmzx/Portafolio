@@ -46,7 +46,7 @@
   overflow: hidden;
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  height: 100%; /* Permitir que la tarjeta ajuste su altura según el contenido */
+  height: 500px; /* Altura fija para todas las tarjetas */
   display: flex;
   flex-direction: column;
 }
@@ -58,7 +58,7 @@
 
 /* Imagen dentro de las tarjetas */
 .card img {
-  height: 200px;
+  height: 200px; /* Altura fija para la imagen */
   object-fit: cover;
   width: 100%;
   border-bottom: 4px solid #3498db;
@@ -79,7 +79,7 @@
   font-weight: bold;
   color: #3498db;
   transition: color 0.3s ease;
-  min-height: 50px;
+  min-height: 50px; /* Altura mínima para el título */
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -89,17 +89,16 @@
 .card-text {
   font-size: 16px;
   color: #666;
-  min-height: 50px;
+  min-height: 50px; /* Altura mínima para la descripción */
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
 }
 
 /* Botón dentro de las tarjetas */
-.btn-custom,
-.btn-secondary {
-  background-color: #8e44ad; /* Mismo color para ambos botones */
-  border-color: #8e44ad;
+.btn-primary {
+  background-color: #3498db;
+  border-color: #3498db;
   transition: background-color 0.3s ease, transform 0.3s ease;
   font-size: 16px;
   font-weight: bold;
@@ -108,10 +107,9 @@
   margin-top: 10px;
 }
 
-.btn-custom:hover,
-.btn-secondary:hover {
-  background-color: #f1c40f; /* Cambia a amarillo al hacer hover */
-  border-color: #f1c40f;
+.btn-primary:hover {
+  background-color: #8e44ad;
+  border-color: #8e44ad;
   transform: scale(1.1);
 }
 
@@ -131,13 +129,13 @@
   background-color: #3498db;
   color: white;
   border-bottom: none;
-  position: relative;
+  position: relative; /* Permite posicionar la "X" en la esquina superior derecha */
 }
 
 .modal-header .close {
   position: absolute;
   top: 10px;
-  right: 15px;
+  right: 15px; /* Coloca la "X" en la esquina superior derecha */
   color: rgb(10, 1, 1);
   opacity: 0.8;
   transition: opacity 0.3s ease;
@@ -149,7 +147,7 @@
 
 .modal-body {
   padding: 20px;
-  color: #000;
+  color: #000; /* Cambia el color del texto dentro del modal a negro */
 }
 
 .modal-body img {
@@ -161,4 +159,15 @@
 
 .modal-footer {
   border-top: none;
+}
+
+.modal-footer .btn-secondary {
+  background-color: #8e44ad;
+  border: none;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.modal-footer .btn-secondary:hover {
+  background-color: #f1c40f;
+  transform: scale(1.1);
 }
